@@ -1,0 +1,6 @@
+PROJECT(PROCESSPOOL)
+
+ADD_LIBRARY(processpool STATIC processpool.cpp)
+TARGET_LINK_LIBRARIES(processpool manager)
+TARGET_LINK_LIBRARIES(processpool fdwrapper)
+TARGET_INCLUDE_DIRECTORIES(processpool PUBLIC ${PROJECT_SOURCE_DIR})
